@@ -1,9 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import nextTranslate from "next-translate";
+
+export default {
   reactStrictMode: true,
   images: {
-    domains: ['localhost'],
+    domains: ["localhost"],
   },
+  i18n: {
+    locales: ["en", "ar"],
+    defaultLocale: "en",
+    localeDetection: true,
+  },
+  ...nextTranslate(),
 };
-
-export default nextConfig;

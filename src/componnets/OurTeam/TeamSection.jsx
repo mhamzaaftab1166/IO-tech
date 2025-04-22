@@ -48,7 +48,7 @@ export default function TeamSection() {
   const renderTeam = () => (
     <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-5 w-full">
       {teams.map((team) => {
-        const image = `http://localhost:1337${
+        const image = ` https://helpful-bear-6cbd89ff61.strapiapp.com/admin${
           team.imageUrl?.formats?.medium?.url || team.imageUrl?.url
         }`;
 

@@ -2,14 +2,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:1337/api";
+const BASE_URL = "https://helpful-bear-6cbd89ff61.strapiapp.com";
 
 export const fetchOurTeams = createAsyncThunk(
   "ourTeams/fetchOurTeams",
   async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `${BASE_URL}/our-teams?populate=imageUrl`
+        `${BASE_URL}/api/our-teams?populate=imageUrl`
       );
       return response.data;
     } catch (err) {
