@@ -7,7 +7,7 @@ import { FaCircle, FaRegCircle } from "react-icons/fa";
 function HeroSection() {
   return (
     <section className="w-full flex flex-col items-center">
-      <div className="relative w-full max-w-[1400px] min-h-[850px] flex flex-col px-5 md:px-16 pt-9 pb-36 max-md:pb-24">
+      <div className="relative w-full  min-h-[850px] flex flex-col px-5 md:px-16 pt-9 pb-36 max-md:pb-24">
         <Image
           src="/Hero/banner.png"
           alt="Background"
